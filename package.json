@@ -1,0 +1,15 @@
+{
+  "name": "pergaminho-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "description": "Monorepo para o projeto Pergaminho (FATEC Mogi Mirim)",
+  "scripts": {
+    "dev": "pnpm --parallel --filter \"@pergaminho/*\" dev",
+    "build": "pnpm --filter \"@pergaminho/*\" build",
+    "start": "pnpm --filter \"@pergaminho/backend\" start:prod & pnpm --filter \"@pergaminho/frontend\" start"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
